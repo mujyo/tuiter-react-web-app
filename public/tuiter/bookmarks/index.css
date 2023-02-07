@@ -1,0 +1,100 @@
+.wd-body-div{
+    width: 1000px;
+    background-color: black;
+    border: 1px solid rgb(47, 51, 54);
+}
+.wd-top-title{
+    padding-left:16px;
+    padding-top:12px;
+    color:white;
+    font-size:20px;
+}
+.wd-user{
+    font-size:13px;
+    padding-left:16px;
+    padding-top:16px;
+    padding-bottom:12px;
+    color: rgb(110, 118, 125);
+}
+.wd-top-hr{
+    border: 1px solid gray;
+}
+.wd-mid{
+    padding-top:12px;
+    padding-left:16px;
+}
+.wd-mid-img{
+    border-radius: 50%;
+    width:48px;
+    high:48px;
+    float: left;
+}
+.wd-author-name{
+    color:white;
+    font-size:15px;
+    padding-left:12px;
+    padding-top:12px;
+}
+.wd-author1{
+    color:rgb(110, 118, 125);
+    font-size:15px;
+}
+.wd-tweet-content{
+    color:white;
+    font-size:15px;
+    max-width:506px;
+    padding-left:65px;
+    padding-right:16px;
+    padding-bottom:12px;
+}
+.wd-tweet-img{
+    width:504px;
+    high:264px;
+    padding-left:65px;
+    border-collapse: separate;
+    border-radius:25px 25px 0 0 !important;
+
+}
+.wd-text-below-img{
+    max-width:506px;
+    color:rgb(110, 118, 125);
+    font-size:12px;
+    padding-left:10px;
+    margin-right:-65px;
+    padding-bottom:8px;
+}
+.wd-title-below-img{
+    color:white;
+    font-size:15px;
+    padding-left:10px;
+    margin-right:-65px;
+}
+.wd-main{
+    margin-left:65px;
+    width:505px;
+    border: 1px solid rgb(47, 51, 54);
+    border-radius:0 0 25px 25px !important;
+}
+.wd-bt-num{
+    color:rgb(110, 118, 125);
+}
+.wd-bt-num2{
+    color:pink;
+}
+.wd-b3{
+    color:pink;
+    border: none;
+    background-color:black;
+}
+.wd-b1{
+    color:rgb(110, 118, 125);
+    background-color:black;
+    border: none;
+}
+.wd-btns{
+    padding-left:65px;
+    padding-top:12px;
+}
+.wd-space-mid{
+    padding-top:20px;
+}

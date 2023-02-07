@@ -1,0 +1,105 @@
+.wd-search-box{
+    background-color: #333;
+    color: #fff;
+    border-radius: 20px;
+    border: 1px solid #333;
+    padding: 10px;
+    margin-right: 12px;
+    width: 300px;
+}
+.wd-body-div{
+    width: 1000px;
+    background-color: black;
+    border: 1px solid rgb(47, 51, 54);
+}
+.wd-inner-div{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left:20px;
+}
+.blue-color {
+    color:blue;
+}
+
+.wd-nav-div{
+    padding-top:20px;
+}
+
+.wd-active{
+    color:rgb(29,161,242);
+    font-size: 15px;
+    padding: 16px;
+    display: inline-block;
+}
+.wd-nav-inactive{
+    text-decoration: none;
+    color: rgb(110, 118, 125);
+    font-size: 15px;
+    padding: 16px;
+    display: inline-block;
+}
+.wd-mid{
+    color:rgb(110, 118, 125);
+    margin-right: 20px;
+}
+.wd-topic{
+    color:rgb(110, 118, 125);
+    font-size: 13px;
+    padding-top:16px;
+    padding-right:16px;
+    padding-left:16px;
+    padding-bottom:16px;
+}
+.wd-title{
+    color:white;
+    font-size: 16px;
+    padding-top:16px;
+    padding-right:16px;
+    padding-left:16px;
+    padding-bottom:16px;
+}
+.wd-num{
+    color:rgb(110, 118, 125);
+    font-size: 13px;
+    padding-top:16px;
+    padding-right:16px;
+    padding-left:16px;
+    padding-bottom:16px;
+}
+.wd-bwt-topics{
+    padding-top:10px;
+}
+.wd-auther{
+    color:white;
+    padding-top:16px;
+    padding-right:5px;
+    padding-left:16px;
+    padding-bottom:16px;
+}
+.wd-auther-time{
+    font-size: 13px;
+    color:rgb(110, 118, 125);
+}
+.wd-d-title{
+    color:white;
+    font-size:16px;
+    padding-top:16px;
+    padding-right:5px;
+    padding-left:16px;
+    padding-bottom:40px;
+}
+.wd-d1-image{
+    width:100px;
+    high:100px;
+    float: right;
+    padding-right:16px;
+    margin-top: -20px;
+}
+.wd-bwt-ds{
+    padding-top:10px;
+    border:None;
+}
+.wd-bwt-ds2{
+    padding-top:10px;
+    border:None;
+}
