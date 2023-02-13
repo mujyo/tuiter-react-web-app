@@ -3,96 +3,351 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="../../vendors/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../../vendors/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet"/>
     <link rel='stylesheet'
           href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <link href="index.css"
           rel="stylesheet"/>
 </head>
 <body>
-    <div class="wd-body-div">
-        <div class="wd-inner-div">
-            <input class="wd-search-box" type="text" placeholder="Search Tuiter">
-            <a href="explore-settings.html">
-                <i class='fa fa-gear blue-color'></i>
-            </a>
-            <div class="wd-nav-div">
-                <nav>
-                    <a class="wd-active" href="#">For you</a>
-                    <a class="wd-nav-inactive", href="#">Trending</a>
-                    <a class="wd-nav-inactive", href="#">COVID-19</a>
-                    <a class="wd-nav-inactive", href="#">News</a>
-                    <a class="wd-nav-inactive", href="#">Sports</a>
-                    <a class="wd-nav-inactive", href="#">Entertainment</a>
-                </nav>
-                <hr class="wd-mid">
-                <div>
-                    <h class="wd-topic"> Trending in Science </h>
-                </div>
-                <div>
-                    <h class="wd-title"> Starship </h>
-                </div>
-                <div>
-                    <h class="wd-num"> 55.5k Tweets </h>
-                </div>
-                <p class="wd-bwt-topics">
-                <div>
-                    <h class="wd-topic"> Sports Tranding </h>
-                </div>
-                <div>
-                    <h class="wd-title"> Joe Rogan </h>
-                </div>
-                <div>
-                    <h class="wd-num"> 5218 Tweets </h>
-                </div>
-                <hr class="wd-mid">
-                <div class="wd-d-div">
-                    <div class="wd-d1">
-                        <h class="wd-auther"> The New York Times </h>
-                        <h class="wd-auther-time"> - Yesterday </h>
+    <div class="container-fluid bg-white container-div">
+        <div class="row">
+            <!--<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-4 col-xxl-4 bg-white d-flex justify-content-end col-m-5">-->
+            <!--<div class="col-4 col-sm-3 col-md-1 col-lg-1 col-xl-4 col-xxl-4 bg-white">-->
+            <div class="col-12 col-sm-4">
+                <div class="row justify-content-end">
+                    <div class="col-2 bg-white">
+                        <div class="d-block d-sm-none fa-2x ">XS</div>
+                        <div class="d-none d-sm-block d-md-none fa-2x">S</div>
+                        <div class="d-none d-md-block d-lg-none fa-2x">M</div>
+                        <div class="d-none d-lg-block d-xl-none fa-2x">L</div>
+                        <div class="d-none d-xl-block d-xxl-none fa-2x">XL</div>
+                        <div class="d-none d-xxl-block fa-2x">XXL</div>
                     </div>
-                    <div>
-                        <h class="wd-d-title"> CNN's Cuomo conundrum: A start anchor with a brother in trouble </h>
-                        <img class="wd-d1-image", src="images.jpeg">
+                    <div class="col-8 bg-white align-self-center">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-10 col-xxl-3 col-xl-3 col-lg-3 col-sm-3">
+                                        <i class="fab fa-twitter"></i>
+                                    </div>
+                                    <div class="col-10 col-xxl-7 col-xl-7 col-lg-0 d-none d-xxl-block d-xl-block">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-10 col-xxl-3 col-xl-3 col-lg-3 col-sm-3">
+                                        <i class="fas fa-home"></i>
+                                    </div>
+                                    <div class="col-10 col-xxl-7 col-xl-7 col-lg-0 d-none d-xxl-block d-xl-block">
+                                    <!--<div class="col-7 col-xl-0 d-none d-xl-block">-->
+                                        Home
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item active">
+                                <div class="row">
+                                    <div class="col-10 col-xxl-3 col-xl-3 col-lg-3 col-sm-3">
+                                        <i class="fas fa-compass"></i>
+                                    </div>
+                                    <div class="col-10 col-xxl-7 col-xl-7 col-lg-0 d-none d-xxl-block d-xl-block">
+                                    <!--<div class="col-7 col-xl-0 d-none d-xl-block">-->
+                                        Explore
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-10 col-xxl-3 col-xl-3 col-lg-3 col-sm-3">
+                                        <i class="fas fa-bell"></i>
+                                    </div>
+                                    <div class="col-10 col-xxl-7 col-xl-7 col-lg-0 d-none d-xxl-block d-xl-block">
+                                    <!--<div class="col-7 col-xl-0 d-none d-xl-block">-->
+                                        Notifications
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-10 col-xxl-3 col-xl-3 col-lg-3 col-sm-3">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="col-10 col-xxl-7 col-xl-7 col-lg-0 d-none d-xxl-block d-xl-block">
+                                    <!--<div class="col-7 col-xl-0 d-none d-xl-block">-->
+                                        Messages
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-10 col-xxl-3 col-xl-3 col-lg-3 col-sm-3">
+                                        <i class="fas fa-bookmark"></i>
+                                    </div>
+                                    <div class="col-10 col-xxl-7 col-xl-7 col-lg-0 d-none d-xxl-block d-xl-block">
+                                    <!--<div class="col-7 col-xl-0 d-none d-xl-block">-->
+                                        Bookmarks
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-10 col-xxl-3 col-xl-3 col-lg-3 col-sm-3">
+                                        <i class="fas fa-list"></i>
+                                    </div>
+                                    <div class="col-10 col-xxl-7 col-xl-7 col-lg-0 d-none d-xxl-block d-xl-block">
+                                    <!--<div class="col-7 col-xl-0 d-none d-xl-block">-->
+                                    <!--<div class="col-7　col-xl-0 d-none d-xl-block">-->
+                                        Lists
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-10 col-xxl-3 col-xl-3 col-lg-3 col-sm-3">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <div class="col-10 col-xxl-7 col-xl-7 col-lg-0 d-none d-xxl-block d-xl-block">
+                                    <!--<div class="col-7 col-xl-0 d-none d-xl-block">-->
+                                    <!--<div class="col-7　col-xl-0 d-none d-xl-block">-->
+                                        Profile
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <!--<div class="col-3">-->
+                                    <div class="col-10 col-xxl-3 col-xl-3 col-lg-3 col-sm-3">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </div>
+                                    <div class="col-10 col-xxl-7 col-xl-7 col-lg-0 d-none d-xxl-block d-xl-block">
+                                    <!--<div class="col-7 col-lg-0 d-none d-xxl-block d-xl-block">-->
+                                        More
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <button type="submit" class="btn btn-primary btn-round container-div">Tweet</button>
                     </div>
-                    <hr class="wd-bwt-ds">
-                    <div class="wd-d2">
-                        <h class="wd-auther"> Los Angeles Times </h>
-                        <h class="wd-auther-time"> - 10:00pm </h>
-                    </div>
-                    <div>
-                        <h class="wd-d-title"> Watch live: U.S. House Speaker Kevin McCarthy speaks on the debt ceiling </h>
-                        <img class="wd-d1-image", src="images1.jpeg">
-                    </div>
-                    <hr class="wd-bwt-ds">
-                    <hr class="wd-mid">
-                    <div>
-                        <div>
-                            <h class="wd-topic"> COVID-19 </h>
-                            <h class="wd-auther-time"> - Yesterday </h>
+                </div>
+            </div>
+
+            <!--<div class="col-md-4 bg-white col-m-5">-->
+            <!--<div class="col-4 col-sm-7 col-md-5 col-lg-5 col-xl-4 col-xxl-4 bg-white">-->
+            <div class="col-12 col-sm-4">
+                <!-- The column in the middle contains the main content -->
+                <div class="row">
+                    <form class="form-inline left-aligned">
+                        <div style="float:left;">
+                            <input class="form-control fa fa-search margin-left-mid" type="search" placeholder="    Search Twitter">
                         </div>
-                        <div>
-                            <h class="wd-title"> COVID-19: News and updates for Massachusetts </h>
-                            <img class="wd-d1-image", src="images2.jpeg">
-                            <hr class="wd-bwt-ds2">
+                        <div style="float:right;">
+                            <a href="explore-settings.html">
+                                <i class="fa fa-cog"></i>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="row">
+                    <ul class="nav nav-tabs container-div">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">For you</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Trending</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sports</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Entertainment</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="card">
+                        <img src="images6.jpg"
+                             class="card-img-top margin-left-mid" alt="...">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-7">
+                                    <h5 class="card-title margin-left-mid font-size-mid grey-text margin-left-mid-more">Web Development</h5>
+                                    <p>
+                                        <b class="card-tec margin-left-mid font-size-mid margin-left-mid-more">ReactJS</b>
+                                        <span class="font-size-mid grey-text">-2h</span>
+                                    </p>
+                                    <p class="card-text font-size-mid intro margin-left-mid-more less-upper-space">
+                                        <b> React.js is a component based front end library that
+                                            makes it very easy to build Single Page Application or SPAs. </b>
+                                    </p>
+                                </div>
+                                <div class="col-3">
+                                    <img class="img-web" src="images7.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row after-first-row">
+                    <div class="card">
+                        <div class="card-body">
+
+                            <div class="row">
+                                <div class="col-7">
+                                    <p>
+                                        <b class="card-tec margin-left-mid font-size-mid margin-left-mid-more">JavaScript</b>
+                                        <span class="font-size-mid grey-text">-2h</span>
+                                    </p>
+                                    <p class="card-text font-size-mid intro margin-left-mid-more less-upper-space">
+                                        <b>JavaScript is programming language that can run on browsers as well as desktops.</b>
+                                    </p>
+                                    <p class="font-size-mid grey-text margin-left-mid-more less-upper-space">123k Tweets</p>
+                                </div>
+                                <div class="col-3">
+                                    <img class="img-web" src="images8.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row after-first-row">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-7">
+                                    <h5 class="card-title margin-left-mid font-size-mid grey-text margin-left-mid-more">Web Development</h5>
+                                    <p>
+                                        <b class="font-size-mid card-tec margin-left-mid margin-left-mid-more">JQuery</b>
+                                    </p>
+                                    <p class="font-size-mid grey-text margin-left-mid-more less-upper-space">123k Tweets</p>
+                                </div>
+                                <div class="col-3">
+                                    <img class="img-web" src="images9.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row after-first-row">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-7">
+                                    <h5 class="card-title margin-left-mid font-size-mid grey-text margin-left-mid-more">Web Development</h5>
+                                    <p>
+                                        <b class="card-tec margin-left-mid font-size-mid margin-left-mid-more">NodeJS</b>
+                                        <span class="font-size-mid grey-text">-2h</span>
+                                    </p>
+                                    <p class="font-size-mid grey-text margin-left-mid-more less-upper-space">123k Tweets</p>
+                                </div>
+                                <div class="col-3">
+                                    <img class="img-web" src="images10.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="col-md-4 bg-white col-m-0 d-none d-xxl-block d-xl-block d-lg-block">-->
+            <!--<div class="col-4 col-sm-0 col-lg-4 col-xl-4 col-xxl-4 bg-white col-m-0 d-none d-xxl-block d-xl-block d-lg-block">-->
+            <div class="d-none d-xxl-block d-xl-block d-lg-block col-lg-4">
+                <!-- the column on the right is another side bar
+                with links to other users you might want to follow -->
+                <ul class="list-group left-ul">
+                    <li class="list-group-item">Who to follow</li>
+                    <li class="list-group-item">
+                        <div class="container-fluid">
+                            <div class="row row-left">
+                                <div class="col-4 img-col">
+                                    <img class="right-img" src="images122.png">
+                                </div>
+                                <div class="col-4 div-left-col-sec">
+                                    <b class="left-col-sec">Java</b>
+                                    <p class="left-col-sec">@Java</p>
+                                </div>
+                                <div class="col-2">
+                                    <button type="submit" class="btn btn-primary btn-round-left">follow</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="container-fluid">
+                            <div class="row row-left">
+                                <div class="col-4 img-col">
+                                    <img class="right-img" src="images14.jpg">
+                                </div>
+                                <div class="col-4 div-left-col-sec">
+                                    <b class="left-col-sec">Relativity Space</b>
+                                    <p class="left-col-sec">@Relativity Space</p>
+                                </div>
+                                <div class="col-2">
+                                    <button type="submit" class="btn btn-primary btn-round-left">follow</button>
+                                </div>
+                            </div>
                         </div>
 
-                        <div>
-                            <h class="wd-topic"> Earthquake </h>
-                            <h class="wd-auther-time"> - Yesterday </h>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="container-fluid">
+                            <div class="row row-left">
+                                <div class="col-4 img-col">
+                                    <img class="right-img" src="images15.png">
+                                </div>
+                                <div class="col-4 div-left-col-sec">
+                                    <b class="left-col-sec">Virgin Galactic </b>
+                                    <p class="left-col-sec">@Virgin Galactic</p>
+                                </div>
+                                <div class="col-2">
+                                    <button type="submit" class="btn btn-primary btn-round-left">follow</button>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <h class="wd-title"> Major earthquake kills 3,700 in Turkey and Syria </h>
-                            <img class="wd-d1-image", src="images3.jpeg">
-                            <hr class="wd-bwt-ds2">
+                    </li>
+                    <li class="list-group-item">
+                        <div class="container-fluid">
+                            <div class="row row-left">
+                                <div class="col-4 img-col">
+                                    <img class="right-img" src="images116.png">
+                                </div>
+                                <div class="col-4 div-left-col-sec">
+                                    <b class="left-col-sec">NASA </b>
+                                    <p class="left-col-sec">@NASA</p>
+                                </div>
+                                <div class="col-2">
+                                    <button type="submit" class="btn btn-primary btn-round-left">follow</button>
+                                </div>
+                            </div>
                         </div>
-                        <hr class="wd-mid">
-                    </div>
-
-                </div>
-
+                    </li>
+                    <li class="list-group-item">
+                        <div class="container-fluid">
+                            <div class="row row-left">
+                                <div class="col-4 img-col">
+                                    <img class="right-img" src="images17.png">
+                                </div>
+                                <div class="col-4 div-left-col-sec">
+                                    <b class="left-col-sec">Tesla</b>
+                                    <p class="left-col-sec">@Tesla</p>
+                                </div>
+                                <div class="col-2">
+                                    <button type="submit" class="btn btn-primary btn-round-left">follow</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
-
 </body>
 </html>
