@@ -1,0 +1,25 @@
+.selected-a{
+    font-weight: bold;
+}
+.twt-color{
+   color:#00aced;
+}
+.btn-color{
+    background-color:#00aced;
+}
+.bg-color{
+    background-color: rgba(230, 230, 230, 0.3);
+}
+.non-border{
+    border:none;
+}
+.active-nav{
+    color:black;
+}
+.rd-img{
+    border-radius: 15%;
+}
+.wd-search-tuiter{
+    bottom:10px;
+    left:10px;
+}
