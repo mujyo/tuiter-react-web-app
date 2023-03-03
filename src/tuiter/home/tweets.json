@@ -1,0 +1,21 @@
+[{ "userName": "SpaceX",
+  "time": "23h",
+  "content": "SpaceX designs, manufactures and launches advanced rockets and spacecraft. ",
+  "image": "spaceX.jpeg",
+  "mainimage":"news1.jpeg",
+  "commentNum":"198k",
+  "repeatNum": "143k",
+  "likedNum":"98k",
+  "link": "SpaceX.com/news."
+},
+
+  { "userName": "Elon Musk",
+    "time": "15h",
+    "content": "Musk has said his brain implant company, Neuralink, will make the paralyzed walk.",
+    "image": "elon.jpeg",
+    "mainimage":"news2.jpeg",
+    "commentNum":"28k",
+    "repeatNum": "13k",
+    "likedNum":"8k"
+  }
+]
