@@ -14,6 +14,7 @@ function Assignment6() {
     <ConditionalOutput/>
     <Styles/>
     <Classes/>
+
   </div>
  )
 }

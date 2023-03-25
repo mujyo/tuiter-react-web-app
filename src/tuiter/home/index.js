@@ -1,16 +1,15 @@
 import React from "react";
-import tweet from "./tweets.json";
-import HomeTweetItem from "./homeTweet";
+import TuitsList from "../tuits";
+import WhatsHappening from "./whats-happening";
+
 
 const HomeComponent = () =>{
     return(
-        <ul className="list-group">
-        {
-            tweet.map(homeTweet =>
-                <HomeTweetItem
-                    key={homeTweet._id} homeTweet={homeTweet}/> )
-        }
-        </ul>
+        <>
+            <h4>Home</h4>
+            <WhatsHappening/>
+            <TuitsList/>
+        </>
     );
 };
 
