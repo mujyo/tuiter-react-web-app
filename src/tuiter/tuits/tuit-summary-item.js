@@ -9,9 +9,8 @@ import { faCheckCircle } from '@fortawesome/free-solid-svg-icons'
 import "./index.css";
 import {useState} from "react";
 import {useDispatch} from "react-redux";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
 import { deleteTuit } from "../../tuits/home-tuits-reducer";
-
-
 
 
 const TuitItem = (
@@ -48,7 +47,7 @@ const TuitItem = (
  const dispatch = useDispatch();
 
  const deleteTuitHandler = (id) => {
-   dispatch(deleteTuit(id));
+   dispatch(deleteTuitThunk(id));
  }
  return(
   <ul>

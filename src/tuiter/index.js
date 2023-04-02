@@ -13,7 +13,7 @@ import HomeComponent from "./home";
 import homeTuitsReducer from "../tuits/home-tuits-reducer.js"
 
 const store = configureStore({
- reducer: {who: whoReducer, tuits: tuitsReducer, homeTuits: homeTuitsReducer}});
+ reducer: {who: whoReducer, tuitsData: tuitsReducer}});
 
 
 

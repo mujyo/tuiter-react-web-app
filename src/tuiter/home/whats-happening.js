@@ -1,4 +1,5 @@
-import {createTuit} from "../tuits/tuits-reducer";
+import {createTuitThunk}
+  from "../../services/tuits-thunks";
 import {useDispatch} from "react-redux";
 import {useState} from "react";
 
@@ -13,7 +14,7 @@ const tuitClickHandler = () => {
      tuit: whatsHappening
    }
    console.log(newTuit);
-   dispatch(createTuit(newTuit, { slice: 'homeTuits' }));
+   dispatch(createTuitThunk(newTuit, { slice: 'homeTuits' }));
 }
 
 
