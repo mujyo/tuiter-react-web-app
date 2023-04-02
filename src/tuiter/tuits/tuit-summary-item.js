@@ -10,7 +10,6 @@ import "./index.css";
 import {useState} from "react";
 import {useDispatch} from "react-redux";
 import {deleteTuitThunk} from "../../services/tuits-thunks";
-import { deleteTuit } from "../../tuits/home-tuits-reducer";
 
 
 const TuitItem = (
